@@ -1,0 +1,10 @@
+<div *ngIf="dependants && dependants.length > 0" class="list-group">
+  <a *ngFor="let dependant of dependants" href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{ dependant.fullNames }}</h5>
+      <small>{{ dependant.dateOfBirth | date }}</small>
+    </div>
+    <p class="mb-1">{{ dependant.gender }}</p>
+    <small>And some small print.</small>
+  </a>
+</div>

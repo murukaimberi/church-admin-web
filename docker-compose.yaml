@@ -1,0 +1,10 @@
+services:
+  church-admin-web:
+    container_name: "church-admin-web"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    expose:
+      - 80
